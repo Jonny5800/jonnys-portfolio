@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- ^^bootstraqp one -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- ^^from get bootstrap POSSIBLY REMOVE INTEGRITY AND CROSSORIGIN FROM LINK-->
+    <title>Working One</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a5e402e3b2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner">
+        <div class="hamburger" onclick="this.classList.toggle('open')">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+
+        <div class="jonnyInBanner">JONNY</div>
+        <div><i class="fa-brands fa-whatsapp"></i> +447749519916</div>
+      </div>
+
+      <nav>
+        <!-- <div class="hamburger" onclick="this.classList.toggle('open')">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div> -->
+        <ul class="menu show">
+          <li id="menuAbout"><a href="#aboutSectionTop">About</a></li>
+          <li><a href="#projectStopPoint">Projects</a></li>
+          <li><a href="#contactSection">Contact</a></li>
+          <!-- <li>
+            <a href=""
+              ><i class="fa-brands fa-twitter" style="color: #ffffff"
+                >hellobe</i
+              ></a
+            >
+          </li> -->
+          <div class="socialIcons">
+            <i
+              class="fa-brands fa-twitter menuIcons"
+              style="color: #ffffff"
+            ></i>
+            <i
+              class="fa-brands fa-facebook menuIcons"
+              style="color: #ffffff"
+            ></i>
+            <i
+              class="fa-brands fa-square-instagram menuIcons"
+              style="color: #ffffff"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin menuIcons"
+              style="color: #ffffff"
+            ></i>
+          </div>
+        </ul>
+      </nav>
+      <!---->
+      <!-----------------------------STICKY BANNER TOP------------------------------------------------>
+      <!--<div class="stickyBannerContainer">
+        <div class="stickyBannerHeadingGroup">
+          <a href="#aboutSectionTop">
+            <h5 class="stickyBannerLabels" id="aboutLabel">About</h5></a
+          >
+          <a href="#projectStopPoint"
+            ><h5 class="stickyBannerLabels projectBannerLabel">Projects</h5></a
+          >
+          <a href="#contactSection">
+            <h5 class="stickyBannerLabels" id="contactBannerLabel">
+              Contact
+            </h5></a
+          >
+        </div>
+        <div class="stickyBannerButtonDiv">
+          <h5>
+          -->
+      <!-- <button class="StickyBannerButton">light/dark mode switch</button> -->
+      <!-- </h5>
+        </div>
+      </div> -->
+      <!-----------------------------STICKY BANNER BOTTOM----------------------------------------------->
+      <!-----------------------------LANDING SECTION TOP----------------------------------------------->
+      <main class="main">
+        <section>
+          <div class="landingSection">
+            <div class="logo" id="toTheTop">
+              <img
+                class="logoImage"
+                src="Images/JonnyHallLogo.jpg"
+                alt="JonnyHallLogo"
+              />
+            </div>
+
+            <div class="imageAndIntroDiv">
+              <div class="landingLeftSide">
+                <div class="greeting">JS Time dependant greeting</div>
+
+                <div class="landingAnimatedDiv">
+                  <div class="landingAnimated" id="animatedText">DEVELOPER</div>
+                  <!-- Landing part animated text -->
+                </div>
+                <div class="landingLocation">Based in London</div>
+
+                <div class="landingViewWorkAndContactMeDiv">
+                  <div>
+                    <a href="#projectStopPoint">
+                      <button class="landingViewWorkButton">
+                        View My Work
+                      </button>
+                    </a>
+                  </div>
+
+                  <div class="landingToContactDiv">
+                    <a href="#contactSection"
+                      ><div class="landingToContactText">Contact Me</div></a
+                    >
+                    <div class="landingContactArrow">
+                      <a href="#contactSection">
+                        <i
+                          class="fa-solid fa-angles-down fa-bounce fa-lg landingContactArrow"
+                        ></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- -------------------------------------------------- -->
+              <div class="picAndSubheading">
+                <div class="jonnyPicContainer">
+                  <img
+                    class="jonnyPic"
+                    src="Images/GreyTee.jpg"
+                    alt="picctureofJonny"
+                  />
+
+                  <!-- minimum styling of a circle -->
+                </div>
+                <div class="JonnyPicSubHeading"></div>
+              </div>
+            </div>
+          </div>
+          <div id="bottomOfLanding">-</div>
+          <!-----------------------------LANDING SECTION BOTTOM----------------------------------------------->
+        </section>
+        <section class="aboutSection">
+          <div class="aboutToCenter">
+            <p><span class="aboutHeading">About Me</span></p>
+            <div class="knowMe">More about Jonny</div>
+
+            <div class="introAndDigitDiv">
+              <div class="introDiv">
+                <div id="hiName">
+                  Hi, I'm <span class="underlineJonny">Jonny Hall</span>
+                </div>
+                <div class="introduction">
+                  Introduction about me: I'm fully commited to continual
+                  learning and improvement. In my Web Development journey, the
+                  more I have learned and possibilites realised, the more my
+                  interest has grown. I am hard-working, determined to succeed
+                  and so far, self taught..
+                </div>
+              </div>
+
+              <div class="digitAndYearsDiv">
+                <div class="digitOfYearsDiv">
+                  <p><span class="digitOfYears">1</span></p>
+                </div>
+                <div class="yearsOfExperience">
+                  Years of <span>Experience</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- next fixt the deytials grid -->
+
+          <div class="aboutDetails">
+            <div class="top">
+              <div>Name: <span class="selectedBold">Jonny Hall</span></div>
+              <div>Birthday: <span class="selectedBold">October</span></div>
+            </div>
+
+            <div class="bottom">
+              <div>
+                <span
+                  >Email:<span class="emailUnderline"
+                    ><span class="selectedBold">
+                      jonny@jonnymail.com</span
+                    ></span
+                  ></span
+                >
+              </div>
+              <div>
+                <span>
+                  From: <span class="selectedBold">Yorkshire, UK</span></span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="whatIDoSection">
+          <div class="whatIDoHeadingDiv">
+            <p><span class="whatIDoHeading">What I Do</span></p>
+          </div>
+
+          <p class="addValue">How I can add value to your company</p>
+          <div class="addValueContainer">
+            <div class="addValueDivs">
+              <span class="addValueImage"
+                ><i
+                  class="fa-solid fa-laptop-code fa-2xl"
+                  style="color: #89c5fd"
+                ></i
+              ></span>
+              <span class="addValueSubheading">Web Development</span>
+              <span><p>I can use my skills to build websites</p> </span>
+            </div>
+
+            <div class="addValueDivs">
+              <span class="addValueImage">
+                <i
+                  class="fa-solid fa-list-check fa-2xl"
+                  style="color: #89c5fd"
+                ></i>
+              </span>
+              <span class="addValueSubheading">Motivated to improve</span>
+              <span
+                ><p>So far self taught and keen to ready to improve</p>
+              </span>
+            </div>
+            <i class="fa-light fa-thought-bubble fa-2xl"></i>
+            <div class="addValueDivs">
+              <span class="addValueImage">
+                <i class="fa-light fa-thought-bubble"></i>
+
+                <i
+                  class="fa-solid fa-people-group fa-2xl"
+                  style="color: #89c5fd"
+                ></i>
+              </span>
+              <span class="addValueSubheading">Team Player</span>
+              <span
+                ><p>
+                  I am happy to work individually or collaborate with a team to
+                  get the job done
+                </p>
+              </span>
+            </div>
+          </div>
+        </section>
+        <section class="resumeSection">
+          <div class="ResumeHeadingDiv">
+            <p><span class="ResumeHeading">Resume</span></p>
+          </div>
+
+          <!-- <div class="summary">A Summary of My Resume</div> -->
+          <div class="h2Headings my-5 text-center fs-xs-5 fs-sm-4">
+            A Summary of My Resume
+          </div>
+
+          <!-- <div class="myEducation">My Education</div> -->
+          <h2 class="h2Headings">My Education</h2>
+          <div class="educationSpan">
+            <h2 class="qualification">
+              Bachelor of Pharmaceutical and Chemical Science
+            </h2>
+
+            <h3 class="educationPlace">University of Brighton</h3>
+            <p class="educationDetails">
+              Some details about the time that i went to uni Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit. Cum, asperiores reiciendis
+              natus necessitatibus consequatur quod vel inventore totam
+              voluptatibus. Veniam, sequi. Molestias tempora accusamus doloribus
+              totam laboriosam illum voluptatibus iste? Whats going onnn.
+            </p>
+          </div>
+          <div class="educationSpan">
+            <h2 class="qualification">Domestic Gas Heating Engineer</h2>
+
+            <h3 class="educationPlace">Blue Flame ECS Gas Training</h3>
+            <p class="educationDetails">
+              Some details about becoming a heating engineer Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit. Cum, asperiores reiciendis
+              natus necessitatibus consequatur quod vel inventore totam
+              voluptatibus. Veniam, sequi. Molestias tempora accusamus doloribus
+              totam laboriosam illum voluptatibus iste?
+            </p>
+          </div>
+          <div class="educationSpan">
+            <h2 class="qualification">Web Development Web Stack</h2>
+
+            <h3 class="educationPlace">Self Taught: Online resources</h3>
+            <p class="educationDetails">
+              Some details about becoming a web developer Lorem ipsum dolor sit,
+              amet consectetur adipisicing elit. Cum, asperiores reiciendis
+              natus necessitatibus consequatur quod vel inventore totam
+              voluptatibus. Veniam, sequi. Molestias tempora accusamus doloribus
+              totam laboriosam illum voluptatibus iste?
+            </p>
+          </div>
+          <div class="educationSpan">
+            <h2 class="qualification">Web Development Web Stack</h2>
+
+            <h3 class="educationPlace">Self Taught: Online resources</h3>
+            <p class="educationDetails">
+              Some details about becoming a web developer Lorem ipsum dolor sit,
+              amet consectetur adipisicing elit. Cum, asperiores reiciendis
+              natus necessitatibus consequatur quod vel inventore totam
+              voluptatibus. Veniam, sequi. Molestias tempora accusamus doloribus
+              totam laboriosam illum voluptatibus iste?
+            </p>
+          </div>
+        </section>
+        <section class="experienceSection">
+          <div class="experienceHeader h2Headings">My Experience</div>
+          <div class="educationSpan">
+            <h2 class="qualification">Web Development Web Stack</h2>
+
+            <h3 class="educationPlace">Self Taught: Online resources</h3>
+            <p class="educationDetails">
+              Some details about becoming a web developer Lorem ipsum dolor sit,
+              amet consectetur adipisicing elit. Cum, asperiores reiciendis
+              natus necessitatibus consequatur quod vel inventore totam
+              voluptatibus. Veniam, sequi. Molestias tempora accusamus doloribus
+              totam laboriosam illum voluptatibus iste?
+            </p>
+          </div>
+          <div class="educationSpan">
+            <h2 class="qualification">Web Development Web Stack</h2>
+
+            <h3 class="educationPlace">Self Taught: Online resources</h3>
+            <p class="educationDetails">
+              Some details about becoming a web developer Lorem ipsum dolor sit,
+              amet consectetur adipisicing elit. Cum, asperiores reiciendis
+              natus necessitatibus consequatur quod vel inventore totam
+              voluptatibus. Veniam, sequi. Molestias tempora accusamus doloribus
+              totam laboriosam illum voluptatibus iste?
+            </p>
+          </div>
+          <div class="educationSpan">
+            <h2 class="qualification">Web Development Web Stack</h2>
+
+            <h3 class="educationPlace">Self Taught: Online resources</h3>
+            <p class="educationDetails">
+              Some details about becoming a web developer Lorem ipsum dolor sit,
+              amet consectetur adipisicing elit. Cum, asperiores reiciendis
+              natus necessitatibus consequatur quod vel inventore totam
+              voluptatibus. Veniam, sequi. Molestias tempora accusamus doloribus
+              totam laboriosam illum voluptatibus iste?
+            </p>
+          </div>
+        </section>
+        <section class="skillsSection">
+          <!-- <div class="skillsHeader">My Skills</div> -->
+          <h2 class="h2Headings">My Skills</h2>
+
+          <!-- <div class="carousel-container">
+                <div class="slideLogoContainer">
+                  <img class="slideLogo" src="/Images/htmlLogoCropped.png" alt="htmlLogo"/>
+                  <img class="slideLogo" src="/Images/CSSLogo.png" alt="CSSLogo"/>
+                  <img class="slideLogo" src="/Images/javascriptLogo.png" alt="JavascriptLogo"/>
+                  <img class="slideLogo" src="/Images/ReactLogoPng.png" alt="ReactLogo"/>
+                  <img class="slideLogo" src="/Images/linuxLogo.png" alt="LinuxLogo"/>
+                  <img class="slideLogo" src="/Images/gitLogo.png" alt="GitLogo"/>
+                </div>
+              </div> -->
+          <div class="carousel-container">
+            <div class="carousel-track">
+              <img
+                class="slideLogo"
+                src="/Images/htmlLogoCropped.png"
+                alt="htmlLogo"
+              />
+              <img class="slideLogo" src="/Images/CSSLogo.png" alt="CSSLogo" />
+              <img
+                class="slideLogo"
+                src="/Images/javascriptLogo.png"
+                alt="javascriptLogo"
+              />
+              <img
+                class="slideLogo"
+                src="/Images/ReactLogoPng.png"
+                alt="ReactLogo"
+              />
+              <img
+                class="slideLogo"
+                src="/Images/linuxLogo.png"
+                alt="linuxLogo"
+              />
+              <img class="slideLogo" src="/Images/gitLogo.png" alt="gitLogo" />
+              <!-- <img class="slideLogo" src="/Images/htmlLogoCropped.png" alt="htmlLogo"/>
+                  <img class="slideLogo" src="/Images/CSSLogo.png" alt="CSSLogo"/>
+                  <img class="slideLogo" src="/Images/javascriptLogo.png" alt="javascriptLogo"/>
+                  <img class="slideLogo" src="/Images/ReactLogoPng.png" alt="ReactLogo"/>
+                  <img class="slideLogo" src="/Images/linuxLogo.png" alt="linuxLogo"/>
+                  <img class="slideLogo" src="/Images/gitLogo.png" alt="gitLogo"/> -->
+            </div>
+          </div>
+        </section>
+        <section class="portfolioSection">
+          <div class="downloadButtonDiv">
+            <a href="documents/Jonny Web Dev CV - 2023.docx">
+              <button class="downloadButton">Download CV</button>
+            </a>
+          </div>
+        </section>
+        <section class="portfolioSection">
+          <div class="portfolioHeadingDiv">
+            <p><span class="portfolioHeading">Portfolio</span></p>
+          </div>
+
+          <!-- <p class="projectsSubHeading">Some Projects I have worked on</p> -->
+          <h2 class="h2Headings text-center mt-3">
+            Some Projects I have Worked on
+          </h2>
+          <!------------------------------------PROJECTS------------------------------------------------------>
+
+          <!-- ************************************************ -->
+          <div class="projectSectionHeading" id="projectStopPoint">
+            <h2 id="bannerChangeProjects">Projects</h2>
+          </div>
+          <!-- *************************************************** -->
+          <div class="projectSection" id="projectSection1">
+            <div class="projectContainer">
+              <div class="projectImageHolderLeft">
+                <img
+                  class="computerImage"
+                  src="Images/ComputerImages/laptopAndOrebroFlag.jpg"
+                  alt="screenshot of project"
+                />
+              </div>
+              <div class="projectPadding">
+                <div class="projectDetailsHolderRight">
+                  <div class="projectHeadingPlusDescription">
+                    <div class="projectTitle">
+                      Visit Orebro City - Tourist Landing Page
+                    </div>
+                    <div class="projectDescription">
+                      For this project I used HTML, CSS, JavaScript and React.
+                      It is made responsive using CSS. I used two different
+                      APIs; one to display the weather and the other to show the
+                      location on Google Maps.
+                    </div>
+                  </div>
+                  <div class="projectBadgeDiv">
+                    <div class="badges">
+                      <img
+                        class="logoBadges"
+                        src="Images/reactLogoCropped.png"
+                        alt="reactLogo"
+                      />
+                    </div>
+                    <div class="badges">
+                      <img
+                        class="logoBadges"
+                        src="Images/htmlLogoCropped.png"
+                        alt="htmlLogo"
+                      />
+                    </div>
+                    <div class="badges">
+                      <img
+                        class="logoBadges"
+                        src="Images/CSSLogo.png"
+                        alt="CSSLogo"
+                      />
+                    </div>
+                    <div class="badges">
+                      <img
+                        class="logoBadges"
+                        src="Images/JSLogoCropped.png"
+                        alt="JSLogo"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="projectLinkersDiv">
+                    <div class="links">
+                      <div class="aboveLinkDiv">
+                        <a
+                          href="https://jonny5800.github.io/orebro/"
+                          target="_blank"
+                          rel="noopener noreferer"
+                        >
+                          <i
+                            class="fa-solid fa-arrow-up-right-from-square fa-2xl projectIcons"
+                          ></i>
+                        </a>
+                      </div>
+                      <div class="linkTextDiv">
+                        <p class="linkText">To Website</p>
+                      </div>
+                    </div>
+                    <div class="links">
+                      <div class="aboveLinkDiv">
+                        <a
+                          href="https://github.com/Jonny5800/orebro"
+                          target="_blank"
+                          rel="noopener noreferer"
+                        >
+                          <i
+                            class="fa-brands fa-github fa-2xl projectIcons"
+                          ></i>
+                        </a>
+                      </div>
+                      <div class="linkTextDiv">
+                        <p class="linkText">GitHub</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------------------BETWEEN PROJECTS---------------------------------------- -->
+          <div class="projectSection" id="projectSection2">
+            <div class="projectContainer">
+              <div class="projectImageHolderLeft">
+                <img
+                  class="computerImage"
+                  src="Images/ComputerImages/laptopAndTaskTracker.jpg"
+                />
+              </div>
+              <div class="projectPadding">
+                <div class="projectDetailsHolderRight">
+                  <div class="projectHeadingPlusDescription">
+                    <div class="projectTitle">Task Tracker</div>
+                    <div class="projectDescription">
+                      For this project I used HTML, CSS, JavaScript and React.
+                      CSS is used for styling. React is used for handling data
+                      and conditional rendering
+                    </div>
+                  </div>
+                  <div class="projectBadgeDiv">
+                    <div class="badges">
+                      <img
+                        class="logoBadges"
+                        src="Images/reactLogoCropped.png"
+                      />
+                    </div>
+                    <div class="badges">
+                      <img
+                        class="logoBadges"
+                        src="Images/htmlLogoCropped.png"
+                      />
+                    </div>
+                    <div class="badges">
+                      <img class="logoBadges" src="Images/CSSLogo.png" />
+                    </div>
+                    <div class="badges">
+                      <img class="logoBadges" src="Images/JSLogoCropped.png" />
+                    </div>
+                  </div>
+
+                  <div class="projectLinkersDiv">
+                    <div class="links">
+                      <div class="aboveLinkDiv">
+                        <a
+                          href="https://jonny5800.github.io/task-tracker/"
+                          target="_blank"
+                          rel="noopener noreferer"
+                        >
+                          <i
+                            class="fa-solid fa-arrow-up-right-from-square fa-2xl projectIcons"
+                          ></i>
+                        </a>
+                      </div>
+                      <div class="linkTextDiv">
+                        <p class="linkText">To Website</p>
+                      </div>
+                    </div>
+                    <div class="links">
+                      <div class="aboveLinkDiv">
+                        <a
+                          href="https://github.com/Jonny5800/task-tracker"
+                          target="_blank"
+                          rel="noopener noreferer"
+                        >
+                          <i
+                            class="fa-brands fa-github fa-2xl projectIcons"
+                          ></i>
+                        </a>
+                      </div>
+                      <div class="linkTextDiv">
+                        <p class="linkText">GitHub</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------------------BETWEEN PROJECTS---------------------------------------- -->
+          <div class="projectSection">
+            <div class="projectContainer">
+              <div class="projectImageHolderLeft">
+                <img
+                  class="computerImage"
+                  src="Images/ComputerImages/laptopROckPaperScissors.jpg"
+                />
+              </div>
+              <div class="projectPadding">
+                <div class="projectDetailsHolderRight">
+                  <div class="projectHeadingPlusDescription">
+                    <div class="projectTitle">Rock Paper Scissors</div>
+                    <div class="projectDescription">
+                      For this project I used HTML, CSS, JavaScript. It is
+                      styled using CSS and JavaScript is used for handling data.
+                    </div>
+                  </div>
+                  <div class="projectBadgeDiv">
+                    <div class="badges">
+                      <img
+                        class="logoBadges"
+                        src="Images/htmlLogoCropped.png"
+                      />
+                    </div>
+                    <div class="badges">
+                      <img class="logoBadges" src="Images/CSSLogo.png" />
+                    </div>
+                    <div class="badges">
+                      <img class="logoBadges" src="Images/JSLogoCropped.png" />
+                    </div>
+                  </div>
+
+                  <div class="projectLinkersDiv">
+                    <div class="links">
+                      <div class="aboveLinkDiv">
+                        <a
+                          href="https://jonny5800.github.io/Rock-Paper-Scissors/"
+                          target="_blank"
+                          rel="noopener noreferer"
+                        >
+                          <i
+                            class="fa-solid fa-arrow-up-right-from-square fa-2xl projectIcons"
+                          ></i>
+                        </a>
+                      </div>
+                      <div class="linkTextDiv">
+                        <p class="linkText">To Website</p>
+                      </div>
+                    </div>
+                    <div class="links">
+                      <div class="aboveLinkDiv">
+                        <a
+                          href="https://github.com/Jonny5800/Rock-Paper-Scissors"
+                          target="_blank"
+                          rel="noopener noreferer"
+                        >
+                          <i
+                            class="fa-brands fa-github fa-2xl projectIcons"
+                          ></i>
+                        </a>
+                      </div>
+                      <div class="linkTextDiv">
+                        <p class="linkText">GitHub</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------------------BETWEEN PROJECTS---------------------------------------- -->
+          <!-- <div class="projectSection">
+        <div class="projectContainer">
+          <div class="projectImageHolderLeft">
+            <img
+              class="computerImage"
+              src="Images/ComputerImages/laptopAndFeedback.jpg"
+            />
+          </div>
+          <div class="projectPadding">
+            <div class="projectDetailsHolderRight">
+              <div class="projectHeadingPlusDescription">
+                <div class="projectTitle">Feedback App</div>
+                <div class="projectDescription">
+                  For this project I used HTML, CSS, JavaScript and React.
+                  Styling is done using CSS. React is used for handling data and
+                  conditional rendering.
+                </div>
+              </div>
+              <div class="projectBadgeDiv">
+                <div class="badges">
+                  <img class="logoBadges" src="Images/reactLogoCropped.png" />
+                </div>
+                <div class="badges">
+                  <img class="logoBadges" src="Images/htmlLogoCropped.png" />
+                </div>
+                <div class="badges">
+                  <img class="logoBadges" src="Images/CSSLogo.png" />
+                </div>
+                <div class="badges">
+                  <img class="logoBadges" src="Images/JSLogoCropped.png" />
+                </div>
+              </div>
+
+              <div class="projectLinkersDiv">
+                <div class="links">
+                  <div class="aboveLinkDiv">
+                    <a
+                      href="https://jonny5800.github.io/feedback-app/"
+                      target="_blank"
+                      rel="noopener noreferer"
+                    >
+                      <i
+                        class="fa-solid fa-arrow-up-right-from-square fa-2xl projectIcons"
+                      ></i>
+                    </a>
+                  </div>
+                  <div class="linkTextDiv">
+                    <p class="linkText">To Website</p>
+                  </div>
+                </div>
+                <div class="links">
+                  <div class="aboveLinkDiv">
+                    <a
+                      href="https://github.com/Jonny5800/feedback-app"
+                      target="_blank"
+                      rel="noopener noreferer"
+                    >
+                      <i class="fa-brands fa-github fa-2xl projectIcons"></i>
+                    </a>
+                  </div>
+                  <div class="linkTextDiv">
+                    <p class="linkText">GitHub</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+          <!-- ---------------------------------BETWEEN PROJECTS---------------------------------------- -->
+          <div class="projectSection">
+            <div class="projectContainer">
+              <div class="projectImageHolderLeft">
+                <img
+                  class="computerImage"
+                  src="Images/ComputerImages/LaptopAndCalculator.jpg"
+                />
+              </div>
+              <div class="projectPadding">
+                <div class="projectDetailsHolderRight">
+                  <div class="projectHeadingPlusDescription">
+                    <div class="projectTitle">Calculator</div>
+                    <div class="projectDescription">
+                      For this project I used HTML, CSS, JavaScript It is styled
+                      using CSS and JavaScript is used to handle data.
+                    </div>
+                  </div>
+                  <div class="projectBadgeDiv">
+                    <div class="badges">
+                      <img
+                        class="logoBadges"
+                        src="Images/htmlLogoCropped.png"
+                      />
+                    </div>
+                    <div class="badges">
+                      <img class="logoBadges" src="Images/CSSLogo.png" />
+                    </div>
+                    <div class="badges">
+                      <img class="logoBadges" src="Images/JSLogoCropped.png" />
+                    </div>
+                  </div>
+
+                  <div class="projectLinkersDiv">
+                    <div class="links">
+                      <div class="aboveLinkDiv">
+                        <a
+                          href="https://jonny5800.github.io/calculator/"
+                          target="_blank"
+                          rel="noopener noreferer"
+                        >
+                          <i
+                            class="fa-solid fa-arrow-up-right-from-square fa-2xl projectIcons"
+                          ></i>
+                        </a>
+                      </div>
+                      <div class="linkTextDiv">
+                        <p class="linkText">To Website</p>
+                      </div>
+                    </div>
+                    <div class="links">
+                      <div class="aboveLinkDiv">
+                        <a
+                          href="https://github.com/Jonny5800/calculator"
+                          target="_blank"
+                          rel="noopener noreferer"
+                        >
+                          <i
+                            class="fa-brands fa-github fa-2xl projectIcons"
+                          ></i>
+                        </a>
+                      </div>
+                      <div class="linkTextDiv">
+                        <p class="linkText">GitHub</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------------------BETWEEN PROJECTS---------------------------------------- -->
+          <div class="projectSection">
+            <div class="projectContainer">
+              <div class="projectImageHolderLeft">
+                <img
+                  class="computerImage"
+                  src="Images/ComputerImages/laptopAndBirthdayReminder.jpg"
+                />
+              </div>
+              <div class="projectPadding">
+                <div class="projectDetailsHolderRight">
+                  <div class="projectHeadingPlusDescription">
+                    <div class="projectTitle">Birthday Remindar App</div>
+                    <div class="projectDescription">
+                      For this project I used HTML, CSS, JavaScript and React.
+                      It is styled using CSS. React is used for handling data
+                      and conditional rendering.
+                    </div>
+                  </div>
+                  <div class="projectBadgeDiv">
+                    <div class="badges">
+                      <img
+                        class="logoBadges"
+                        src="Images/reactLogoCropped.png"
+                      />
+                    </div>
+                    <div class="badges">
+                      <img
+                        class="logoBadges"
+                        src="Images/htmlLogoCropped.png"
+                      />
+                    </div>
+                    <div class="badges">
+                      <img class="logoBadges" src="Images/CSSLogo.png" />
+                    </div>
+                    <div class="badges">
+                      <img class="logoBadges" src="Images/JSLogoCropped.png" />
+                    </div>
+                  </div>
+
+                  <div class="projectLinkersDiv">
+                    <div class="links">
+                      <div class="aboveLinkDiv">
+                        <a
+                          href="https://jonny5800.github.io/birthday-reminder-app/"
+                          target="_blank"
+                          rel="noopener noreferer"
+                        >
+                          <i
+                            class="fa-solid fa-arrow-up-right-from-square fa-2xl projectIcons"
+                          ></i>
+                        </a>
+                      </div>
+                      <div class="linkTextDiv">
+                        <p class="linkText">To Website</p>
+                      </div>
+                    </div>
+                    <div class="links">
+                      <div class="aboveLinkDiv">
+                        <a
+                          href="https://github.com/Jonny5800/birthday-reminder-app"
+                          target="_blank"
+                          rel="noopener noreferer"
+                        >
+                          <i
+                            class="fa-brands fa-github fa-2xl projectIcons"
+                          ></i>
+                        </a>
+                      </div>
+                      <div class="linkTextDiv">
+                        <p class="linkText">GitHub</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------------------------------BETWEEN PROJECTS----BLANK------------------------------------ -->
+          <!-- <div class="projectSection">
+        <div class="projectContainer">
+          <div class="projectImageHolderLeft">
+            <img
+              class="computerImage"
+              src="Images/ComputerImages/LaptopBlankScreen.jpg"
+            />
+          </div>
+          <div class="projectPadding">
+            <div class="projectDetailsHolderRight">
+              <div class="projectHeadingPlusDescription">
+                <div class="projectTitle">Blank Screen</div>
+                <div class="projectDescription">
+                  Keeping this space spare for new projects to be added
+                </div>
+              </div>
+              <div class="projectBadgeDiv">
+                <div class="badges">
+                  <img class="logoBadges" src="Images/htmlLogoCropped.png" />
+                </div>
+                <div class="badges">
+                  <img class="logoBadges" src="Images/CSSLogo.png" />
+                </div>
+                <div class="badges">
+                  <img class="logoBadges" src="Images/JSLogoCropped.png" />
+                </div>
+                <div class="badges">
+                  <img class="logoBadges" src="Images/CSSLogo.png" />
+                </div>
+              </div>
+
+              <div class="projectLinkersDiv">
+                <div class="links">
+                  <div class="aboveLinkDiv">
+                    <a
+                      href="https://www.pistonheads.com/"
+                      target="_blank"
+                      rel="noopener noreferer"
+                    >
+                      <i class="fa-brands fa-github fa-2xl projectIcons"></i>
+                    </a>
+                  </div>
+                  <div class="linkTextDiv">
+                    <p class="linkText">GitHub</p>
+                  </div>
+                </div>
+                <div class="links">
+                  <div class="aboveLinkDiv">
+                    <a
+                      href="http://calculator.com/"
+                      target="_blank"
+                      rel="noopener noreferer"
+                    >
+                      <i
+                        class="fa-solid fa-arrow-up-right-from-square fa-2xl projectIcons"
+                      ></i>
+                    </a>
+                  </div>
+                  <div class="linkTextDiv">
+                    <p class="linkText">To Website</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+          <!-- ---------------------------------PROJECTS END------------------------------------------------ -->
+        </section>
+        <section class="interestedSection">
+          <div class="workFromHomeDiv" id="workFromHomeDiv">
+            <div class="WorkFromHomeText">Like what you see?</div>
+            <button class="contactButton">Contact Me</button>
+            <div class="workFromHomeImageContainer">
+              <img
+                class="workFromHomeImage"
+                src="Images/workingFromHomeBlurred.jpg"
+                alt="BlurredImageOfWorkingFromHome"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="faqSection">
+          <!-- <div class=" lightbulbDiv">
+        <img class="lightbulb" src="/Images/lightbulb.png"/>
+    </div> -->
+          <div class="lightbulbDiv">
+            <img class="lightbulb" src="/Images/lightbulbTwo.png" />
+          </div>
+
+          <div class="faqDiv">
+            <p><span class="faq">FAQ</span></p>
+          </div>
+        </section>
+
+        <!-- <section class="carouselSection">
+          <section class="carousel">
+            <div class="carousel__slider">
+              <ul class="carousel__list">
+                <li class="carousel__item">
+                  <span>1</span>
+                </li>
+                <li class="carousel__item">
+                  <span>2</span>
+                </li>
+                <li class="carousel__item">
+                  <span>3</span>
+                </li>
+                <li class="carousel__item">
+                  <span>4</span>
+                </li>
+                <li class="carousel__item">
+                  <span>5</span>
+                </li>
+                <li class="carousel__item">
+                  <span>6</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section> -->
+        <section class="accordionSection">
+          <div class="questionsDiv">
+            <p class="gotQuestions">Do you have questions?</p>
+          </div>
+
+          <!-- <div class="accordionDiv">
+<ul id="accordion">
+        <li>
+            <label for="first">Who is Jonny <span>></span></label> 
+           
+            <input type="radio" name="accordion" id="first" checked>
+            <div class="content">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eos quasi dignissimos veritatis iste nesciunt illo expedita? Voluptatem, fugit distinctio?
+                </p>
+            </div>
+        </li>
+        <li>
+            <label for="second">How can I add to your team <span>&#x3e</span></label>
+            <input type="radio" name="accordion" id="second" >
+            <div class="content">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eos quasi dignissimos veritatis iste nesciunt illo expedita? Voluptatem, fugit distinctio?
+                </p>
+            </div>
+        </li>
+        <li>
+            <label for="third">Why I decided on this careeer <span>&#x3e</span></label>
+            <input type="radio" name="accordion" id="third" >
+            <div class="content">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eos quasi dignissimos veritatis iste nesciunt illo expedita? Voluptatem, fugit distinctio?
+                </p>
+            </div>
+        </li>
+    </ul>
+</div> -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Who Is Jonny?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  A Future Web Developer eager to learn more and improve skills.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  What does Jonny have Experience with?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  I have spent time learning HTML, CSS, JS and React and
+                  becoming familiar with Bootstrap
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  How did Jonny Learn Web Development?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  So far, self taught through finding resources online
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  What does Jonny have an interest to learn
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Bootstrap, Wordpress, Typescript, React.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="contactSection" id="contactSection">
+            <h1 class="contactHeader">Contact</h1>
+            <!-- logos from font awesome -->
+            <div class="contactLogoDiv">
+              <div class="gitHubDiv">
+                <div class="gitHubLogo">
+                  <a
+                    href="https://github.com/Jonny5800"
+                    target="_blank"
+                    rel="noopener noreferer"
+                    ><i class="fa-brands fa-github fa-2xl"></i
+                  ></a>
+
+                  <!-- <i class="fa-brands fa-github fa-bounce fa-2xl"></i> activate on hover-->
+                  <div class="githubText contatLogoText">GitHub</div>
+                </div>
+              </div>
+              <div class="emailDiv">
+                <div class="emailLogoDiv">
+                  <a
+                    href="mailto:jonny@jonny.com?subject=I%20saw%20your%20portfolio"
+                  >
+                    <i class="fa-solid fa-at fa-2xl"></i>
+                  </a>
+                  <div class="emailTextDiv contatLogoText">Email</div>
+                </div>
+              </div>
+              <div class="linkedinDiv">
+                <div class="linkedinLogoDiv">
+                  <a
+                    href="https://www.linkedin.com/in/jonnny-hall-bsc-hons/"
+                    target="_blank"
+                    rel="noopener noreferer"
+                    ><i class="fa-brands fa-linkedin fa-2xl"></i
+                  ></a>
+
+                  <!-- <i class="fa-brands fa-linkedin fa-bounce fa-2xl"></i> activate on hover-->
+                  <div class="linkedinTextDiv contatLogoText">LinkedIn</div>
+                </div>
+              </div>
+            </div>
+
+            <form class="formClass" action="">
+              <div class="formRow">
+                <textarea
+                  class="formTextAreas formName"
+                  name="name"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Name"
+                ></textarea>
+              </div>
+              <div class="formRow">
+                <textarea
+                  class="formTextAreas formEmail"
+                  name="name"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Email"
+                ></textarea>
+              </div>
+              <div class="formRow">
+                <textarea
+                  class="formTextAreas formCompanyName"
+                  name="name"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Company Name"
+                ></textarea>
+              </div>
+              <div class="formRow">
+                <textarea
+                  class="formTextAreas formPhoneNumber"
+                  name="name"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Phone Number"
+                ></textarea>
+              </div>
+              <div class="formRow">
+                <textarea
+                  class="formTextAreas formMessage"
+                  name="name"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="submitButtonDiv">
+                <button class="submitButton">Submit</button>
+              </div>
+            </form>
+
+            <a href="#toTheTop"
+              ><button class="returnToTop" id="returnToTopButton">
+                To the top
+              </button></a
+            >
+          </div>
+        </section>
+        <section class="keep at bottomfor spacing">
+          <div></div>
+          <div></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
