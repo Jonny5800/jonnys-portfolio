@@ -31,6 +31,11 @@ a:visited {
   z-index: 20;
 }
 
+@media (max-width: 450px) {
+  .phoneNumber {
+    padding-right: 15px;
+  }
+}
 /***************************BANNER BOTTOM**************************************************************************/
 
 /**************************BURGER MENU TOP*************************************************************/
@@ -581,6 +586,10 @@ a:visited {
     margin: 0 0 30px;
   }
 }
+@media (max-width: 450px) {
+  .aboutDetails .bottom {
+  }
+}
 /* .bottom {
   color: blue;
   flex-direction: column;
@@ -1088,6 +1097,9 @@ ul {
   .projectSection {
     height: auto;
   }
+  .projectSectionHeading {
+    padding-top: 0px;
+  }
 }
 
 .projectContainer {
@@ -1124,6 +1136,7 @@ ul {
     position: relative;
     top: 110px;
     /* color: green; */
+    margin-bottom: 0px;
   }
 }
 .projectPadding {
@@ -1226,3 +1239,29 @@ ul {
   }
 }
 /****************************PROJECTS BOTTOM*********************************/
+/* .banner {
+  z-index: 5;
+}
+.accordion {
+  z-index: 1;
+} */
+
+/* .banner {
+  position: relative;
+  z-index: 10;
+}
+
+.accordion.accordion {
+  position: relative;
+  z-index: 0;
+} */
+.banner {
+  position: relative;
+}
+
+.accordion {
+  position: relative;
+  transform: translateZ(
+    0
+  ); /* Create a new stacking context for the accordion */
+}
