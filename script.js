@@ -1,38 +1,58 @@
 /**********BANNER TOP*/
-// Get the banner element
+// // Get the banner element
+// const banner = document.querySelector(".banner");
+
+// // Get the offset position of the banner
+// const bannerOffsetTop = banner.offsetTop;
+
+// // Add a scroll event listener
+// window.addEventListener("scroll", function () {
+//   // Check if the user has scrolled past the banner
+//   if (window.pageYOffset > bannerOffsetTop) {
+//     // Add the 'sticky' class to the banner
+//     banner.classList.add("sticky");
+//   } else {
+//     // Remove the 'sticky' class from the banner
+//     banner.classList.remove("sticky");
+//   }
+// });
+
 const banner = document.querySelector(".banner");
-
-// Get the offset position of the banner
 const bannerOffsetTop = banner.offsetTop;
+const bannerHeight = banner.offsetHeight;
 
-// Add a scroll event listener
 window.addEventListener("scroll", function () {
-  // Check if the user has scrolled past the banner
   if (window.pageYOffset > bannerOffsetTop) {
-    // Add the 'sticky' class to the banner
     banner.classList.add("sticky");
+    banner.style.top = "0";
   } else {
-    // Remove the 'sticky' class from the banner
     banner.classList.remove("sticky");
+    banner.style.top = "";
   }
 });
+
+window.addEventListener("resize", function () {
+  if (banner.classList.contains("sticky")) {
+    bannerOffsetTop = banner.offsetTop;
+    banner.style.top = "0";
+  }
+});
+
+// window.addEventListener("scroll", function () {
+//   if (window.pageYOffset > bannerOffsetTop) {
+//     banner.classList.add("sticky");
+//   } else {
+//     banner.classList.remove("sticky");
+//   }
+// });
+
+// window.addEventListener("resize", function () {
+//   if (banner.classList.contains("sticky")) {
+//     bannerOffsetTop = banner.offsetTop;
+//   }
+// });
+
 /**************BANNER BOTTOM*/
-
-// const fullDate = new Date();
-// const time = fullDate.getHours();
-// console.log(fullDate);
-// console.log(time);
-
-// if (time < 12 && time >= 0) {
-//   console.log("good morning");
-// } else if (time > 12 && time <= 16) {
-//   console.log("good afternoon");
-// } else if (time > 16 && time <= 23) {
-//   console.log("good evening");
-// }
-
-// const greetingElement = document.querySelector(".greeting");
-// greetingElement.textContent = greeting;
 
 const fullDate = new Date();
 const time = fullDate.getHours();
