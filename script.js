@@ -1,21 +1,4 @@
 /**********BANNER TOP*/
-// // Get the banner element
-// const banner = document.querySelector(".banner");
-
-// // Get the offset position of the banner
-// const bannerOffsetTop = banner.offsetTop;
-
-// // Add a scroll event listener
-// window.addEventListener("scroll", function () {
-//   // Check if the user has scrolled past the banner
-//   if (window.pageYOffset > bannerOffsetTop) {
-//     // Add the 'sticky' class to the banner
-//     banner.classList.add("sticky");
-//   } else {
-//     // Remove the 'sticky' class from the banner
-//     banner.classList.remove("sticky");
-//   }
-// });
 
 const banner = document.querySelector(".banner");
 const bannerOffsetTop = banner.offsetTop;
@@ -37,20 +20,6 @@ window.addEventListener("resize", function () {
     banner.style.top = "0";
   }
 });
-
-// window.addEventListener("scroll", function () {
-//   if (window.pageYOffset > bannerOffsetTop) {
-//     banner.classList.add("sticky");
-//   } else {
-//     banner.classList.remove("sticky");
-//   }
-// });
-
-// window.addEventListener("resize", function () {
-//   if (banner.classList.contains("sticky")) {
-//     bannerOffsetTop = banner.offsetTop;
-//   }
-// });
 
 /**************BANNER BOTTOM*/
 
@@ -86,12 +55,6 @@ hamburger.addEventListener("click", () => {
   menu.classList.toggle("show");
   console.log("show toggled");
 });
-// hamburger.addEventListener("click", () => {
-//   menu.classList.toggle("menu--open")
-//     ? hamburger.classList.add("open")
-//     : hamburger.classList.remove("open");
-// });
-/*toggling the menu open and closed BOTTOM*/
 
 document.addEventListener("DOMContentLoaded", () => {
   const messages = ["I'm Jonny", "A Web Developer"];
