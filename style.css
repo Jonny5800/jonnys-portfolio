@@ -35,7 +35,9 @@ a:visited {
   padding-left: 45px;
   z-index: 20;
 }
-
+.phoneNumber a {
+  margin-right: 10px;
+}
 @media (max-width: 450px) {
   .phoneNumber {
     padding-right: 15px;
@@ -132,8 +134,8 @@ a:visited {
 @media (min-width: 1190px) {
   .banner {
     position: relative;
-    color: red;
-    color: green;
+    color: black;
+    font-weight: bolder;
     padding-left: 60px;
   }
 }
@@ -441,7 +443,7 @@ a:visited {
     font-size: 20px;
     line-height: 12px;
     margin: 10px;
-    color: green;
+    /* color: green; */
   }
   .introAndDigitDiv {
     flex-direction: column;
@@ -458,13 +460,13 @@ a:visited {
   .introduction {
     padding: 20px 10px;
     line-height: 35px;
-    color: blue;
+    /* color: blue; */
   }
 }
 @media (min-width: 1100px) {
   .introduction {
     line-height: 35px;
-    color: red;
+    /* color: red; */
   }
 }
 #hiName {
@@ -849,6 +851,12 @@ a:visited {
 .lightbulb {
   height: 100px;
 }
+
+@media (min-width: 750px) {
+  .lightbulb {
+    height: 300px;
+  }
+}
 .keep {
   margin-top: 100px;
 }
@@ -1077,7 +1085,7 @@ ul {
 }
 
 .projectSection {
-  height: 100vh;
+  /* height: 100vh; experimmm*/
 }
 
 .projectContainer {
@@ -1085,7 +1093,7 @@ ul {
   justify-content: center;
 }
 .projectImageHolderLeft {
-  width: 40vw;
+  width: 40vw; /*messinnnn was 40vw*/
 }
 .projectTitle {
   font-size: 24px;
@@ -1101,6 +1109,8 @@ ul {
   max-width: 40vw;
   border-bottom: #89c5fd 3px solid;
   border-right: none;
+  padding: 10px;
+  border-radius: 25px;
 }
 
 .projectPadding {
@@ -1113,16 +1123,22 @@ ul {
   margin-top: 20px;
 }
 .projectDetailsHolderRight {
-  width: 40vw;
+  width: 40vw; /*messinnnnnn*/
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   border-top: #89c5fd 6px solid;
   border-right: #89c5fd 6px solid;
-  padding: 0px 30px;
+  padding: 0px 10px;
   margin: 10px;
   border-radius: 30px;
   /* background-color: #89c5fd; */
+}
+
+@media (min-width: 1600px) {
+  .projectDetailsHolderRight {
+    width: 27vw; /*messinnnnnn*/
+  }
 }
 .projectBadgeDiv {
   display: flex;
@@ -1160,7 +1176,7 @@ ul {
 
 .linkTextDiv {
   display: flex;
-  margin-top: 5px;
+  mabluergin-top: 5px;
 }
 .linkText {
   text-align: center;
@@ -1173,7 +1189,66 @@ ul {
   justify-content: center;
 }
 
+.backgroundBlue {
+  /*height: auto; /*650px*/
+  width: 100%;
+  background-image: url("./images/Backgrounds/blueSea.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* https://www.pexels.com/photo/aerial-photography-of-body-of-water-749564/ */
+  padding-top: 1px;
+}
+
+.tasksBackgound {
+  height: auto; /*650px*/
+  width: 100%;
+  background-image: url("./images/Backgrounds/tasksBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* https://www.wallpaperflare.com/tasks-plan-target-list-checklist-organization-paper-communication-wallpaper-ajiek */
+  padding-top: 1px;
+}
+
+.gameBackground {
+  height: auto; /*650px*/
+  width: 100%;
+  background-image: url("./images/Backgrounds/RockPaperScissorsBack.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* https://www.telegraph.co.uk/men/thinking-man/11051704/How-to-always-win-at-rock-paper-scissors.html */
+  padding-top: 1px;
+}
+
+.addpad10px {
+  padding: 10px;
+}
 /*media queries to the bottom when everything sorted*/
+
+.numbersBackground {
+  height: auto; /*650px*/
+  width: 100%;
+  background-image: url("./images/Backgrounds/numbersBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* https://www.google.com/search?q=numbers+background+jpg&tbm=isch&ved=2ahUKEwiuiaX3qZT_AhUfmycCHU9dDZ0Q2-cCegQIABAA&oq=numbers+background+jpg&gs_lcp=CgNpbWcQAzoECCMQJzoHCAAQigUQQzoFCAAQgARQukBYtEpg_1VoAHAAeACAAd8BiAG9BZIBBTEuMy4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=OFpxZK6NIZ-2nsEPz7q16Ak&bih=945&biw=858#imgrc=sHY1O32rXfOkFM */
+  padding-top: 1px;
+}
+.birthdayBackground {
+  height: auto; /*650px*/
+  width: 100%;
+  background-image: url("./images/Backgrounds/birthdayBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* https://wallpapersafari.com/w/OrXxEu */
+}
+.birthdaySection {
+  padding-top: 1px;
+}
 
 @media (max-width: 450px) {
   .projectSection {
