@@ -5,6 +5,9 @@
   font-family: "Asap Condensed", sans-serif;
   /* border: 1px solid black; */
 }
+.whiteText {
+  color: white;
+}
 
 a:visited {
   color: inherit;
