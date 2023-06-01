@@ -22,6 +22,7 @@ a:visited {
   padding: 20px 10px 20px 20px;
   background-color: #89c5fd;
   box-shadow: black 0px 1px 8px;
+  font-weight: bolder;
 }
 
 .banner.sticky {
@@ -115,15 +116,15 @@ a:visited {
 
 @media (min-width: 410px) {
   .banner {
-    color: red;
+    /* color: red; */
     padding-left: 50px;
   }
 }
 
 @media (min-width: 499px) {
   .banner {
-    color: red;
-    color: rebeccapurple;
+    /* color: red; */
+    /* color: rebeccapurple; */
     padding-left: 60px;
   }
   .hamburger {
@@ -138,7 +139,7 @@ a:visited {
   .banner {
     position: relative;
     color: black;
-    font-weight: bolder;
+
     padding-left: 60px;
   }
 }
@@ -1207,6 +1208,7 @@ ul {
   height: auto; /*650px*/
   width: 100%;
   background-image: url("./images/Backgrounds/tasksBackground.jpg");
+  background-image: url("./images/Backgrounds/postits.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1218,6 +1220,7 @@ ul {
   height: auto; /*650px*/
   width: 100%;
   background-image: url("./images/Backgrounds/RockPaperScissorsBack.jpg");
+  background-image: url("./images/Backgrounds/RPSHands.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1234,6 +1237,9 @@ ul {
   height: auto; /*650px*/
   width: 100%;
   background-image: url("./images/Backgrounds/numbersBackground.jpg");
+  background-image: url("./images/Backgrounds/mathsBack.png");
+  background-image: url("./images/Backgrounds/anglesBack.png"); /*https://www.google.com/search?q=maths+background&sxsrf=APwXEdfYE-2YenswLpoocz82p0_D7dH46A:1685607457646&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiqk_mN0aH_AhURwQIHHauMBuEQ_AUoAXoECAEQAw&biw=2253&bih=976&dpr=0.8#imgrc=zA5XqSZhdFLIlM&imgdii=G6dd8-yqp7YMSM*/
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
